@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriPlan</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body class="min-h-screen gradient-bg">
+    <!-- Navbar -->
+    <nav class="glass-effect fixed w-full top-0 z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <div class="text-white text-2xl font-bold flex items-center">
+                    <i class="fas fa-leaf mr-2 text-green-400"></i>
+                    NutriPlan
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-6">
+                    <a href="#home" class="text-white hover:text-green-400 transition-colors">Home</a>
+                    <a href="#planner" class="text-white hover:text-green-400 transition-colors">Planner</a>
+                    <a href="#recipes" class="text-white hover:text-green-400 transition-colors">Recipes</a>
+                    <a href="#nutrition" class="text-white hover:text-green-400 transition-colors">Nutrition</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-white" id="mobile-menu-btn">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="hidden md:hidden mt-4" id="mobile-menu">
+                <div class="flex flex-col space-y-2">
+                    <a href="#home" class="text-white hover:text-green-400 transition-colors py-2">Home</a>
+                    <a href="#planner" class="text-white hover:text-green-400 transition-colors py-2">Planner</a>
+                    <a href="#recipes" class="text-white hover:text-green-400 transition-colors py-2">Recipes</a>
+                    <a href="#nutrition" class="text-white hover:text-green-400 transition-colors py-2">Nutrition</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+ <script src="script.js"></script>
+</body>
+</html>
