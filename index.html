@@ -124,6 +124,36 @@
                     Generate My Diet Plan
                 </button>
             </div>
+
+            <!-- display card -->
+             <div id="generated-plan" class="">
+                <!-- BMI and Calories Display -->
+                <div class="glass-effect rounded-2xl p-8 mb-8 fade-in">
+                    <div class="grid md:grid-cols-3 gap-6 text-center">
+                        <div class="bg-green-500/20 rounded-xl p-6">
+                            <i class="fas fa-weight text-3xl text-green-400 mb-4"></i>
+                            <h4 class="text-white text-lg font-semibold">Your BMI</h4>
+                            <p id="bmi-value" class="text-3xl font-bold text-green-400 mt-2">--</p>
+                            <p id="bmi-status" class="text-gray-300 text-sm mt-1">--</p>
+                        </div>
+                        <div class="bg-blue-500/20 rounded-xl p-6">
+                            <i class="fas fa-fire text-3xl text-blue-400 mb-4"></i>
+                            <h4 class="text-white text-lg font-semibold">Daily Calories</h4>
+                            <p id="calories-value" class="text-3xl font-bold text-blue-400 mt-2">--</p>
+                            <p class="text-gray-300 text-sm mt-1">Recommended intake</p>
+                        </div>
+                        <div class="bg-purple-500/20 rounded-xl p-6">
+                            <i class="fas fa-target text-3xl text-purple-400 mb-4"></i>
+                            <h4 class="text-white text-lg font-semibold">Goal</h4>
+                            <p id="goal-display" class="text-2xl font-bold text-purple-400 mt-2">--</p>
+                            <p class="text-gray-300 text-sm mt-1">Your objective</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Macro Distribution -->
+                
+            </div>
         </div>
      </section>
 
