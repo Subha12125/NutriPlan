@@ -64,6 +64,69 @@
         </div>
     </section>
 
+
+    <!-- diet-planner section  -->
+     <section id="planner" class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-white mb-4">Personal Diet Planner</h2>
+                <p class="text-gray-200 max-w-2xl mx-auto">Set your goals and let us create the perfect meal plan for you</p>
+            </div>
+
+            <!-- box  -->
+             <div class="glass-effect rounded-2xl p-8 mb-8 max-w-4xl mx-auto fade-in">
+                <h3 class="text-2xl font-semibold text-white mb-6">Your Profile</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div>
+                        <label class="block text-white text-sm font-medium mb-2">Age</label>
+                        <input type="number" id="age" class="w-full px-4 py-3 rounded-lg bg-white/10 text-white placeholder-gray-400 border border-white/20 focus:border-green-400 focus:outline-none" placeholder="25" min="13" max="100">
+                    </div>
+                    <div>
+                        <label class="block text-white text-sm font-medium mb-2">Weight (kg)</label>
+                        <input type="number" id="weight" class="w-full px-4 py-3 rounded-lg bg-white/10 text-white placeholder-gray-400 border border-white/20 focus:border-green-400 focus:outline-none" placeholder="70" min="30" max="300">
+                    </div>
+                    <div>
+                        <label class="block text-white text-sm font-medium mb-2">Height (cm)</label>
+                        <input type="number" id="height" class="w-full px-4 py-3 rounded-lg bg-white/10 text-white placeholder-gray-400 border border-white/20 focus:border-green-400 focus:outline-none" placeholder="170" min="100" max="250">
+                    </div>
+                    <div>
+                        <label class="block text-white text-sm font-medium mb-2">Activity Level</label>
+                        <select id="activity" class="w-full px-4 py-3 rounded-lg bg-white/10 text-white border border-white/20 focus:border-green-400 focus:outline-none">
+                            <option value="sedentary" class="text-gray-800">Sedentary</option>
+                            <option value="light" class="text-gray-800">Light Activity</option>
+                            <option value="moderate" class="text-gray-800">Moderate Activity</option>
+                            <option value="active" class="text-gray-800">Very Active</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6 mt-6">
+                    <div>
+                        <label class="block text-white text-sm font-medium mb-2">Goal</label>
+                        <select id="goal" class="w-full px-4 py-3 rounded-lg bg-white/10 text-white border border-white/20 focus:border-green-400 focus:outline-none">
+                            <option value="lose" class="text-gray-800">Lose Weight</option>
+                            <option value="maintain" class="text-gray-800">Maintain Weight</option>
+                            <option value="gain" class="text-gray-800">Gain Weight</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-white text-sm font-medium mb-2">Dietary Preferences</label>
+                        <select id="diet-type" class="w-full px-4 py-3 rounded-lg bg-white/10 text-white border border-white/20 focus:border-green-400 focus:outline-none">
+                            <option value="balanced" class="text-gray-800">Balanced</option>
+                            <option value="low-carb" class="text-gray-800">Low Carb</option>
+                            <option value="high-protein" class="text-gray-800">High Protein</option>
+                            <option value="vegetarian" class="text-gray-800">Vegetarian</option>
+                            <option value="vegan" class="text-gray-800">Vegan</option>
+                            <option value="keto" class="text-gray-800">Keto</option>
+                        </select>
+                    </div>
+                </div>
+                <button onclick="generatePlan()" class="w-full mt-8 bg-gradient-to-r from-green-500 to-blue-600 text-white py-4 rounded-lg font-semibold text-lg hover:from-green-600 hover:to-blue-700 transition-all transform hover:scale-105">
+                    Generate My Diet Plan
+                </button>
+            </div>
+        </div>
+     </section>
+
     <script src="script.js"></script>
 </body>
 </html>
