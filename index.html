@@ -226,6 +226,32 @@
             </div>
         </div>
     </section>
+
+
+    <!-- Nutrition Tracker  -->
+     <section class="py-16" id="nutrition">
+        <div class="container mx-auto px-4">
+            <!-- heading  -->
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-white mb-4"><span class="bg-gradient-to-r from-green-400 via-emerald-500 to-teal-400 bg-clip-text text-transparent">Nutrition</span> Tracker</h2>
+                <p class="text-gray-200 max-w-2xl mx-auto">Track your daily food intake and monitor your nutritional goals</p>
+            </div>
+
+            <!-- Food serach and add  -->
+             <div class="glass-effect rounded-2xl p-8 mb-8 max-w-4xl mx-auto">
+                <h3 class="text-2xl font-semibold text-white mb-6">Add Food Item</h3>
+                <div class="flex flex-col md:flex-row gap-4">
+                    <input type="text" id="food-search" placeholder="Search for food (e.g., apple, chicken breast)" 
+                           class="flex-1 px-4 py-3 rounded-lg bg-white/10 text-white placeholder-gray-400 border border-white/20 focus:border-green-400 focus:outline-none">
+                    <input type="number" id="food-quantity" placeholder="Quantity" min="1" 
+                           class="w-32 px-4 py-3 rounded-lg bg-white/10 text-white placeholder-gray-400 border border-white/20 focus:border-green-400 focus:outline-none">
+                    <button onclick="searchFood()" class="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold transition-colors">
+                        <i class="fas fa-plus mr-2"></i>Add Food
+                    </button>
+                </div>
+            </div>
+        </div>
+     </section>
     <script src="script.js"></script>
 </body>
 </html>
