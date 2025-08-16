@@ -243,15 +243,93 @@
                 <div class="flex flex-col md:flex-row gap-4">
                     <input type="text" id="food-search" placeholder="Search for food (e.g., apple, chicken breast)" 
                            class="flex-1 px-4 py-3 rounded-lg bg-white/10 text-white placeholder-gray-400 border border-white/20 focus:border-green-400 focus:outline-none">
-                    <input type="number" id="food-quantity" placeholder="Quantity" min="1" 
+                    <input type="number" id="food-quantity" placeholder="Quantity (g)" min="1" 
                            class="w-32 px-4 py-3 rounded-lg bg-white/10 text-white placeholder-gray-400 border border-white/20 focus:border-green-400 focus:outline-none">
                     <button onclick="searchFood()" class="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold transition-colors">
                         <i class="fas fa-plus mr-2"></i>Add Food
                     </button>
                 </div>
             </div>
+
+
+            <!-- Daily Progress  -->
+             <div class="glass-effect rounded-2xl p-8 mb-8">
+                <h3 class="text-2xl font-semibold text-white mb-6">Today's Progression</h3>
+                <div class="grid md:grid-cols-4 gap-6">
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-green-400" id="consumed-calories">0</div>
+                        <div class="text-gray-300 text-sm">Calories Consumed</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-blue-400" id="consumed-protein">0g</div>
+                        <div class="text-gray-300 text-sm">Protein</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-yellow-400" id="consumed-carbs">0g</div>
+                        <div class="text-gray-300 text-sm">Carbs</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-red-400" id="consumed-fat">0g</div>
+                        <div class="text-gray-300 text-sm">Fat</div>
+                    </div>
+                </div>
+
+
+                <div class="mt-8 space-y-4">
+                    <div>
+                        <div class="flex justify-between text-white text-sm mb-1">
+                            <span>Daily Calorie Goal</span>
+                            <span id="calorie-progress">0 / 2000 kcal</span>
+                        </div>
+                        <div class="bg-white/20 rounded-full h-2">
+                            <div id="calorie-progress-bar" class="bg-green=500 h-2 rounded-full transition-all duration-500" style="width: 0%;"></div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+
+
+             <!-- food log  -->
+            <div class="glass-effect rounded-2xl p-8">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 class="text-2xl font-semibold text-white">Food Log</h3>
+                    <button onclick="clearFoodLog()" class="text-red-400 hover:text-red-300 text-sm">
+                        <i class="fas fa-trash mr-1"></i>Clear Log
+                    </button>
+                </div>
+
+                <div id="food-log" class="space-y-3">
+                    <p class="text-gray-400 text-center py-8">No food items logged yet. Start by adding some food above!</p>
+                </div>
+            </div>
         </div>
      </section>
+
+
+    <!-- footer  -->
+    <footer class="py-12 border-t border-white/10">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <div class="text-white text-2xl font-bold mb-4 flex items-center justify-center">
+                    <i class="fas fa-leaf mr-2 text-green-400"></i>
+                    NutriPlan
+                </div>
+                <p class="text-gray-300 mb-6">Your journey to better health starts here</p>
+                <div class="flex justify-center space-x-6 mb-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fab fa-facebook text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                </div>
+                <p class="text-gray-300 text-sm">&copy; 2025 NutriPlan. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
