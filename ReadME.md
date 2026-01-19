@@ -87,9 +87,7 @@ console.log(mockFoodDB['banana']);
 ## 🔮 Future Enhancements
 
 * Add **serving size adjustments** (e.g., per piece, per cup, per slice).
-* Expand to **100+ food items**.
-* Provide **API endpoints** using Node.js / Express.
-* Link to **real nutrition data** (USDA or other APIs).
+
 
 ---
 
@@ -105,3 +103,4 @@ This project is open-source and free to use for **learning and development purpo
 
 👉 Do you want me to also **add usage examples in Node.js / Browser** (like `import` and `require`), so anyone can directly plug this into their project?
 ```
+
